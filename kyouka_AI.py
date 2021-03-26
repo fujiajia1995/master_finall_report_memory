@@ -1,4 +1,4 @@
-mport random
+import random
 
 switch_flag = 1 # 0 Qlearning 1 Sarsa
 
