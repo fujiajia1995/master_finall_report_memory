@@ -1,2 +1,2 @@
-# master_finall_report_memory
-# master_finall_report_memory
+guassian分布によって、mnist手書き文字を識別する。（試作品）
+master_final_report
