@@ -1,15 +1,15 @@
-file_name:guassian_mnist.py
-description:guassian分布によって、mnist手書き文字を識別する。（試作品）(0と１の図だけ使われています)
-data_set:usps-image.zip
+file_name:guassian_mnist.py \\
+description:guassian分布によって、mnist手書き文字を識別する。（試作品）(0と１の図だけ使われています) \\
+data_set:usps-image.zip\\
 
-file_name:map.py
-description:matplotlabを用いて、数値化したマップのデータを元に戻す。
-data_set:権限ある、御覧不可。
-結果の図：data.png
+file_name:map.py\\
+description:matplotlabを用いて、数値化したマップのデータを元に戻す。\\
+data_set:権限ある、御覧不可。\\
+結果の図：data.png\\
 
-file_name:game_ai.py
-description:古典的なAI、評価変数可変。（評価関数に元ついで、AIのIQも変化する。）
+file_name:game_ai.py\\
+description:古典的なAI、評価変数可変。（評価関数に元ついで、AIのIQも変化する。）\\
 
 
-file_name:kyouka_AI.py
-description:簡単なSARSAとQLearningの実装。
+file_name:kyouka_AI.py\\
+description:簡単なSARSAとQLearningの実装。\\
