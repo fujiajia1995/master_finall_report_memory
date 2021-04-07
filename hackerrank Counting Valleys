@@ -1,0 +1,58 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'countingValleys' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts following parameters:
+#  1. INTEGER steps
+#  2. STRING path
+#
+
+def makeList(path):
+    kekka =[0]
+    path = list(path)
+    for i,num in enumerate(path):
+        if path[i] == "U":
+            path[i] = 1
+        else:
+            path[i] =-1
+    for i in path:
+         kekka.append(kekka[-1]+i)
+    return kekka
+
+def count(path):
+    kekka = []
+    for i,num in enumerate(path):
+        if num == 0:
+            kekka.append(i)
+    return kekka
+def countingValleys(steps, path):
+    kekka = 0
+    # Write your code here
+    path = makeList(path)
+    zero = count(path)
+    for i in range(len(zero)-1):
+        if -1 in path[zero[i]:zero[i+1]]:
+            kekka += 1
+    return kekka
+        
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    steps = int(input().strip())
+
+    path = input()
+
+    result = countingValleys(steps, path)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
